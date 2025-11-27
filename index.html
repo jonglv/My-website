@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Belfast Black Cats — Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container inner">
+      <a class="brand" href="index.html">
+        <img src="logo.png" alt="Belfast Black Cats logo" id="site-logo">
+        <div>
+          <div style="font-weight:800">Belfast Black Cats</div>
+          <div style="font-size:12px; opacity:0.85">Sunderland AFC Supporters Club — Belfast</div>
+        </div>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="membership.html">Membership</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h1>Events & Fixtures Calendar</h1>
+      <p class="lead">All club events, watch parties and Sunderland fixtures — RSVP via our Google Form.</p>
+      <a class="btn" href="membership.html">Join the Club</a>
+    </section>
+
+    <section class="card">
+      <div id="calendar"></div>
+      <p id="calendar-note" style="margin-top:12px; color:#666; font-size:13px;">Note: To enable fixtures auto-import, add your API-Football API key in <code>js/config.js</code>. If CORS prevents direct client requests, see README for serverless proxy instructions.</p>
+    </section>
+
+    <section style="margin-top:18px;" class="grid-3">
+      <div class="card">
+        <h4>Next Match</h4>
+        <div id="next-match">Loading next Sunderland fixture…</div>
+      </div>
+      <div class="card">
+        <h4>Host a meetup</h4>
+        <p>Email <a href="mailto:events@belfastblackcats.example">events@belfastblackcats.example</a> to propose a venue.</p>
+      </div>
+      <div class="card">
+        <h4>Google RSVP</h4>
+        <p>RSVP opens our Google Form so responses are collected automatically.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
+      <div>&copy; 2025 Belfast Black Cats</div>
+      <div class="social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">X</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>
